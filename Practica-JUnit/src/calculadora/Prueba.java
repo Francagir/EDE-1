@@ -8,6 +8,7 @@ public class Prueba {
 		int b = 0;
 		int opcion = 0;
 		
+		Calculadora c = new Calculadora();
 		
 		System.out.println("Elige la operación que quieras realizar"
 				+ "\n1. Sumar"
@@ -23,11 +24,11 @@ public class Prueba {
 		b = Entrada.entero();
 		
 		switch(opcion){
-		case 1: System.out.println("\nSuma: " + Calculadora.sumar(a, b)); break;
-		case 2: System.out.println("\nResta: " + Calculadora.restar(a, b)); break;
-		case 3: System.out.println("\nDivisión: " + Calculadora.dividir(a, b)); break;
-		case 4: System.out.println("\nMultiplicación: " + Calculadora.multiplicar(a, b)); break;
-		default: System.out.println("\nNúmero no correcto, resultado default de la suma: " + Calculadora.sumar(a, b));
+		case 1: System.out.println("\nSuma: " + c.sumar(a, b)); break;
+		case 2: System.out.println("\nResta: " + c.restar(a, b)); break;
+		case 3: System.out.println("\nDivisión: " + c.dividir(a, b)); break;
+		case 4: System.out.println("\nMultiplicación: " + c.multiplicar(a, b)); break;
+		default: System.out.println("\nNúmero no correcto, resultado default de la suma: " + c.sumar(a, b));
 		}
 		
 	}

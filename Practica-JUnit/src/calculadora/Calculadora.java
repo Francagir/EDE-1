@@ -30,4 +30,10 @@ public class Calculadora {
 		
 		return result;
 	}
+	
+	public double potencia(int n, int m){
+		double result = Math.pow(n, m);
+		
+		return result;
+	}
 }
